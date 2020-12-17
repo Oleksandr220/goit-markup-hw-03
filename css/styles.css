@@ -21,7 +21,7 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: var(--white-background-color);
   font-family: Roboto, sens-serif;
 }
 
@@ -63,6 +63,7 @@ li {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  padding: 32px 0px;
 }
 
 .nav {
@@ -73,7 +74,6 @@ li {
 .nav-list {
   margin: 0;
   display: flex;
-  padding: 32px 0px;
   margin-left: 93px;
 }
 
@@ -175,7 +175,7 @@ li {
   margin: -1px;
 }
 
-.specifications > .conteiner {
+.specifications {
   padding-bottom: 88px;
 }
 
@@ -260,11 +260,12 @@ li {
 
 .team {
   background-color: var(--sec-background-color);
+
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team > .conteiner {
-  padding-top: 94px;
-  padding-bottom: 94px;
   text-align: center;
 }
 
@@ -293,6 +294,8 @@ li {
 
 footer {
   background-color: var(--dark-background-color);
+
+  padding: 60px 15px;
 }
 
 /*логотип футера*/
@@ -301,13 +304,12 @@ footer {
   color: var(--text-color-snow);
   margin-bottom: 20px;
 }
-
+/* 
 .footer > .conteiner {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  padding: 60px 15px;
-}
+} */
 
 .address {
   display: flex;
@@ -343,7 +345,7 @@ footer {
 
 /* Portfolio */
 
-.portfolio > .conteiner {
+.portfolio {
   margin-top: 94px;
   margin-bottom: 94px;
 }
@@ -399,8 +401,12 @@ footer {
   margin: 15px;
 }
 
+.project-content {
+  margin: 20px 24px;
+}
+
 .project-title {
-  margin: 20px 24px 4px;
+  margin-bottom: 4px;
   color: var(--primery-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -409,7 +415,6 @@ footer {
 }
 
 .project-text {
-  margin: 0px 24px 20px;
   color: var(--sec-text-color);
   font-size: 16px;
   line-height: 1.87;
