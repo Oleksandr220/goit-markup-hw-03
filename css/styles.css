@@ -51,14 +51,17 @@ li {
 
 /* Navigation */
 
-.page-header > .conteiner {
-  display: flex;
-  align-items: center;
+.conteiner {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.page-header > .conteiner {
+  display: flex;
+  align-items: center;
 }
 
 .nav {
@@ -140,6 +143,7 @@ li {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .hero-button:hover,
@@ -169,11 +173,6 @@ li {
 }
 
 .specifications > .conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-bottom: 88px;
 }
 
@@ -214,11 +213,6 @@ li {
 /* Activities */
 
 .activities > .conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-bottom: 94px;
 }
 
@@ -266,11 +260,6 @@ li {
 }
 
 .team > .conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 94px;
   text-align: center;
 }
@@ -350,13 +339,40 @@ footer {
 
 /* Portfolio */
 
+.portfolio > .conteiner {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.button-filters {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.filters-item {
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.filters-item:last-child {
+  margin-right: 0;
+}
+
 .filters {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 0px solid transparent;
+  background-color: var(--sec-background-color);
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
+  cursor: pointer;
 }
 
 .filters:hover,
@@ -365,7 +381,22 @@ footer {
   color: var(--text-color-snow);
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  padding: 0;
+}
+
+.projects-items {
+  display: block;
+  border: 0px solid transparent;
+  background-color: var(--white-background-color);
+  margin: 15px;
+}
+
 .project-title {
+  margin: 20px 24px 4px;
   color: var(--primery-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -374,6 +405,7 @@ footer {
 }
 
 .project-text {
+  margin: 0px 24px 20px;
   color: var(--sec-text-color);
   font-size: 16px;
   line-height: 1.87;
