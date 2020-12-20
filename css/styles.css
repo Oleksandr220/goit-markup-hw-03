@@ -128,9 +128,16 @@ li {
   text-align: center;
 }
 
+/* .hero > .conteiner {
+  width: 696px;
+} */
+
 .hero-title {
   margin: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -144,7 +151,8 @@ li {
   padding: 10px, 32px, 10px, 32px;
   border: 2px solid transparent;
   border-radius: 4px;
-  color: var(--primery-text-color);
+  background-color: var(--accent-color);
+  color: var(--text-color-snow);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -155,7 +163,7 @@ li {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--accent-color);
-  color: var(--text-color-snow);
+  color: var(--primery-text-color);
 }
 
 .section-title {
